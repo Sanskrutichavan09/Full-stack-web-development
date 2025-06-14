@@ -1,0 +1,30 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;   
+      background-color: #f0f0f0;
+    }
+    p{
+        background-color: red;
+        color: white;
+    }
+    
+   button {
+    border: 2px solid black;      
+    border-radius: 5px;           
+    background-color: rgb(44, 216, 242);
+    color: white;
+    padding: 10px 20px;          
+    font-size: 16px;               
+    cursor: pointer;          
+}
+button:hover{
+    background-color: blueviolet;
+}
