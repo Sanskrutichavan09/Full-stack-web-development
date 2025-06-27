@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>video practice map audio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(127, 127, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 300px;
+      height: 500px;
+      border: 6px solid red;
+      background-color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box audio,
+    .box iframe {
+      width: 90%;
+      height: 90%;
+    }
+
+    .box audio {
+      height: auto;
+    }
+    .box.audio-box {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  border: 6px solid red;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>This is video, audio, map practice</h1>
+
+  <div class="container">
+    <!-- Video -->
+    <div class="box">
+      <iframe
+        src="https://www.youtube.com/embed/IQBwL-GYgqs?autoplay=1&mute=1"
+        allow="autoplay; encrypted-media"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Audio -->
+ <div class="box audio-box">
+  <audio controls style="width: 90%; height: 50px;">
+    <source src="child-haha-117044.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+    <!-- Map -->
+    <div class="box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.780114457716!2d76.5233503!3d18.2802903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf7f9ad08ab5e3%3A0xd33da65c710087f2!2sRockland!5e0!3m2!1sen!2sin!4v1719471733137!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</body>
+</html>
