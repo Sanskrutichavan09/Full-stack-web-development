@@ -1,0 +1,78 @@
+// 1. Creation and Basic Access 
+
+let arr = [1, 2, 3,4,5,6];
+console.log(arr);
+console.log(arr.length);
+let arr1 = new 
+Array(3); 
+console.log(arr1);
+
+
+// 2. Adding/Removing Elements 
+
+//push  add last value
+let arrmethod = arr.push(4);
+console.log(arrmethod);
+console.log("push value 4 :",arr);
+
+//pop   remove last value
+let remove =arr.pop();
+console.log("pop value 4 :",arr);
+
+// unshift   add 1st value 
+let addstartvalue = arr.unshift(9);
+console.log("add start value unshift :",arr);
+
+// shift()   remove 1st value 
+let removefirst = arr.shift();
+console.log("remove start value shift :",arr);
+
+// splice(start, deleteCount, ...items) 
+let splice =arr.slice(1 ,5)
+console.log("splice:",splice);
+console.log("splice:",arr);
+
+// slice(start, end)
+
+let cut=arr.slice(2,5);
+console.log("slice:",cut);
+console.log("slice:",arr);
+
+
+// 3. Searching and Finding
+
+// includes() Checks if value exists 
+
+let valueexit = arr.includes(2);
+console.log("value exit of not :",valueexit);
+
+
+
+// indexof()   Returns index of first match
+
+let indexval = arr.indexOf(2);
+console.log("value exit of not :",indexval);
+
+// lastIndexOf() Last match index 
+
+let lastindex = arr.lastIndexOf(6);
+console.log("last value :",lastindex);
+
+
+// find() Returns first match (based on condition) 
+let found = arr.find(x => x > 2); 
+console.log("find value : ",found);
+
+
+
+//  indIndex() – Index of first match 
+let indexvalue = arr.findIndex(x => x > 2); 
+console.log(indexvalue);
+
+
+// 4. Sorting and Reversing
+// sort() Sorts array elements arr.sort() 
+let arr3 = [5,7,82,2,1,5];
+let sortarry = arr3.sort();
+
+console.log("sort array : ",sortarry);
