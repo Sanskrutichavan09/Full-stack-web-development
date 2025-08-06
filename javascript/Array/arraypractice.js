@@ -7,7 +7,7 @@ let arr1 = new
 Array(3); 
 console.log(arr1);
 
-
+console.log("_______________________________________________");
 // 2. Adding/Removing Elements 
 
 //push  add last value
@@ -38,6 +38,7 @@ let cut=arr.slice(2,5);
 console.log("slice:",cut);
 console.log("slice:",arr);
 
+console.log("_______________________________________________");
 
 // 3. Searching and Finding
 
@@ -69,6 +70,7 @@ console.log("find value : ",found);
 let indexvalue = arr.findIndex(x => x > 2); 
 console.log(indexvalue);
 
+console.log("_______________________________________________");
 
 // 4. Sorting and Reversing
 // sort() Sorts array elements arr.sort() 
@@ -76,3 +78,28 @@ let arr3 = [5,7,82,2,1,5];
 let sortarry = arr3.sort();
 
 console.log("sort array : ",sortarry);
+// reverse() Reverses the order 
+let reversearr = arr3.reverse();
+console.log("reverse array : ",reversearr);
+
+console.log("_______________________________________________");
+
+// 5. Conversion and String Operations 
+
+// Joins all elements into a string arr.join("-") 
+let joinstr = arr3.join("-");
+console.log("join string : ",joinstr);
+
+// toString() Converts array to string
+let convertstr = arr3.toString();
+console.log("convert aaray to string : ",convertstr);
+
+console.log("_______________________________________________");
+
+// 6. Fill  
+
+//  ill(value, start, end) Fills part of array with value arr.fill(0, 1, 3) 
+let filled = [1, 2, 3].fill(0); 
+console.log("fill : ",filled);
+
+console.log("________________________END___________________________");
